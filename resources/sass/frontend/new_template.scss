@@ -1,0 +1,132 @@
+.select-custom {
+  position: relative;
+  font-family: Arial;
+}
+
+.select-custom select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #444 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #444 transparent;
+  top: 10px;
+}
+
+.select-selected {
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div {
+  background: white;
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  right: 0;
+  width: calc(100% - 10px);
+  z-index: 99;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.option-item:hover {
+  background-color: lightblue;
+}
+
+.option-item span:first-child {
+  display: inline-block;
+  width: calc(100% - 30px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.option-item .color-pane {
+  width: 30px;
+  height: 20px;
+  float: right;
+}
+
+.safe-zone-list {
+  position: absolute;
+  background: white;
+  z-index: 1031;
+  max-height: 300px;
+  border: 1px solid;
+  cursor: pointer;
+  right: 32px;
+  top: 32px;
+  list-style: none;
+  padding: 0px 10px;
+  width: 150px;
+
+  li.checked {
+    background-color: lightgrey;
+  }
+
+  li:hover {
+    background-color: #888888;
+  }
+}
+
+.select2-container .select2-selection--single {
+  height: 38px !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  line-height: 38px !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 36px !important;
+}
+
+.list-field-type {
+  position: absolute;
+  background: white;
+  z-index: 1031;
+  max-height: 400px;
+  overflow-y: scroll;
+  border: 1px solid;
+  cursor: pointer;
+  right: 125px;
+  top: 32px;
+  list-style: none;
+  padding: 0px 10px;
+
+  li:hover {
+      background-color: #888888;
+  }
+}

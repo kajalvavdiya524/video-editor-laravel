@@ -1,0 +1,73 @@
+#preview-popup {
+    box-shadow: 2px 2px #888888;
+    background: white;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    z-index: 1031;
+    display: none;
+
+    #drag-handler {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid;
+        cursor: move;
+    }
+    .canvas-container {
+        border: 1px solid;
+        box-sizing: content-box;
+    }
+
+    #footer {
+        border: 1px solid;
+        box-sizing: content-box;
+
+        label {
+            font-size: 10px;
+        }
+
+        input {
+            font-size: 10px;
+            -moz-appearance: textfield;
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    .preview-control {
+        float: right;
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+            background: lightgrey;
+        }
+    }
+
+    .list-field-type {
+        position: absolute;
+        background: white;
+        z-index: 1031;
+        max-height: 400px;
+        overflow-y: scroll;
+        border: 1px solid;
+        cursor: pointer;
+        right: 0;
+        top: 32px;
+        list-style: none;
+        padding: 0px 10px;
+
+        li:hover {
+            background-color: #888888;
+        }
+    }
+}

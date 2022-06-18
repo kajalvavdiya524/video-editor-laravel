@@ -1,0 +1,65 @@
+.c-icon.grid-view,
+.c-icon.group-preview {
+    cursor: pointer;
+}
+
+.grid-stack-row {
+    justify-content: center;
+    display: flex;
+}
+
+.grid-stack-col {
+    display: inline-flex;
+}
+
+.grid-stack-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .template-resizer {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        cursor: nwse-resize;
+    }
+}
+
+.grid-stack-item-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#template-grid-layout {
+    .grid-stack-item-content {
+        background-color: #ccc;
+    }
+}
+
+#template-group-preview {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    &.align-left {
+        .grid-stack-row {
+            justify-content: start;
+        }
+    }
+}
+
+.grid-stack-item-remove {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+#text-editor-control {
+    position: absolute;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
+}

@@ -1,0 +1,125 @@
+.theme-picker {
+	position: relative;
+
+	.theme-color {
+		position: absolute;
+		top: 9px;
+		right: 25px;
+		
+		.circle-color {
+			width: 15px;
+			height: 20px;
+			display: inline-block;
+    		margin-right: 3px;
+		}
+	}
+}
+
+.circle-text-color-picker {
+	position: relative;
+
+	.circle-color {
+		width: 26px;
+		height: 26px;
+		display: inline-block;
+		position: absolute;
+		top: 6px;
+		right: 25px;
+		border-radius: 50%;
+
+		.text-color {
+			display: inline-block;
+			position: absolute;
+
+			&#text_color1 {
+				width: 11.5px;
+				height: 2px;
+				top: 7px;
+				right: 7px;
+			}
+
+			&#text_color2 {
+				width: 19.5px;
+				height: 5px;
+				top: 10px;
+				right: 3px;
+			}
+
+			&#text_color3 {
+				width: 11px;
+				height: 2px;
+				top: 19px;
+				right: 7px;
+			}
+		}
+	}
+}
+
+.selected-image {
+	position: absolute;
+    top: 33.5px;
+    right: 8px;
+
+	.background-preview {
+		max-width: 64px;
+		max-height: 32px;
+	}
+}
+
+#selectBkImgModal {
+	.background-image-grid {
+		.grid-item {
+			width: 225px;
+			height: 150px;
+			padding-bottom: 0px;
+			cursor: pointer;
+	
+			img {
+				object-fit: contain;
+			}
+		}
+	}
+	
+	.full-size-image img {
+		max-width: 100%;
+	}
+}
+
+#toggleOffsetAngle {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.offsetAngle-wrapper {
+	display: none;
+}
+.burst-color-picker {
+	position: relative;
+	.burst-circle-color {
+		width: 26px;
+		height: 26px;
+		display: inline-block;
+		position: absolute;
+		top: 6px;
+		right: 25px;
+		border-radius: 50%;
+	
+		.burst-text-color {
+			display: inline-block;
+			position: absolute;
+			width: 16px;
+			height: 2px;
+			right: 5px;
+	
+			&#burst_text_color1 {
+				top: 7px;
+			}
+			&#burst_text_color2 {
+				top: 12px;
+			}
+			&#burst_text_color3 {
+				top: 17px;
+			}
+		}
+	}
+}

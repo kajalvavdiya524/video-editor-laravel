@@ -1,0 +1,55 @@
+.fileUpload {
+	position: relative;
+    overflow: hidden;
+    color: #8a93a2;
+
+    input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &:hover {
+        color: #4f5d73;
+    }
+}
+
+.uploading-progress-pane {
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	background: #3c4b64;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    color: white;
+    display: none;
+}
+
+#schedule-form .card-body,
+#schedule-form .card-footer {
+    display: none;
+}
+
+.ms-parent {
+    padding: 0;
+}
+
+.ms-choice {
+    border: none;
+    outline: none;
+    height: 100%;
+    line-height: 2.4;
+}
+
+a {
+    .disabled {
+        pointer-events: none;
+        color: gainsboro;
+    }
+}

@@ -1,0 +1,44 @@
+/coverage
+/node_modules
+# public
+!public/
+public/*
+
+# public/img
+!public/img
+public/img/*
+
+# public/img/icons
+!public/img/icons
+
+ public/fonts
+
+ public/css
+
+/storage/*.key
+/storage/framework/laravel-excel
+/vendor
+/.vscode
+*.sublime-project
+*.sublime-workspace
+_ide_helper.php
+.DS_Store
+.env
+.env.backup
+.idea
+.php_cs.cache
+.phpunit.result.cache
+.phpstorm.meta.php
+.project
+composer.phar
+coverage.xml
+error.log
+Homestead.json
+Homestead.yaml
+npm-debug.log
+package-lock.json
+output.txt
+Thumbs.db
+yarn-error.log
+run.sh
+

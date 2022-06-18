@@ -1,0 +1,1 @@
+<input type="checkbox" id="checked" name="checked" />
